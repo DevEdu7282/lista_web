@@ -1,0 +1,27 @@
+body{
+    color: #222;
+}
+
+main{
+    background: #d9eaf3;
+    min-height: 410px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #2222225e;
+}
+
+.lista{
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.feito{
+    background: #4cda70;
+    text-decoration: line-through;
+}
