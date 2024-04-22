@@ -24,4 +24,14 @@ main{
 .feito{
     background: #4cda70;
     text-decoration: line-through;
+    color: #22222267;
+}
+
+button{
+    background: transparent;
+    border: none;
+}
+
+.butok{
+    color: #0d5507;
 }

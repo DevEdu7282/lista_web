@@ -8,7 +8,7 @@ button.addEventListener('click', () => {
 
     if(input.value === ""){
         alert('Digíte sua Tarefa.');
-    } else if(array.indexOf(input.value.toLowerCase()) !== -1){
+    } else if(array.some(item => item.item === input.value.toLowerCase())){
         alert('Valor já na lista');
     } else{
         array.push({
@@ -34,8 +34,8 @@ function todo_lista(){
         `<div class="lista ${tarefa.feito && "feito"}">
             <p class="m-0">${tarefa.item}</p>
             <div>
-                <button onclick="concluida(${posicao})"><i class="bi bi-check2-all"></i></button>
-                <button onclick="deletar(${posicao})"><i class="bi bi-trash3-fill"></i></button>
+                <button onclick="concluida(${posicao})" class="butok"><i class="bi bi-check-circle-fill"></i></button>
+                <button onclick="deletar(${posicao})" class="text-danger"><i class="bi bi-trash3-fill"></i></button>
             </div>
         </div>`;
     });
